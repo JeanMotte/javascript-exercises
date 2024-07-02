@@ -32,6 +32,26 @@ const factorial = function(number) {
   }
 };
 
+let userInput = document.getElementById("prompt");
+let keys = document.querySelectorAll(".keys");
+
+keys.forEach((key) => {
+  key.addEventListener(("click"), function(e) {
+    userInput.innerText += key.innerText;
+  })
+})
+
+
+
+
+
+
+
+
+
+
+
+
 // Do not edit below this line
 module.exports = {
   add,
