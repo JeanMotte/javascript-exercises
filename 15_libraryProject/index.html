@@ -14,6 +14,33 @@
     </ul>
 
     <button class="add-btn">Add a new book to library</button>
+
+    <form action="" method="post" class="form">
+      <div>
+        <label for="title">Titre</label>
+        <input type="text" id="title">
+      </div>
+
+      <div>
+        <label for="author">Auteur</label>
+        <input type="text" id="author">
+      </div>
+
+      <div>
+        <label for="pages">Nombre de pages</label>
+        <input type="number" id="pages">
+      </div>
+
+      <div>
+        <label for="read">L'avez-vous déjà lu ?</label>
+        <select name="read" id="read">
+          <option value="true">Oui</option>
+          <option value="false">Non</option>
+        </select>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
   </div>
 
 
