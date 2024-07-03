@@ -20,7 +20,7 @@ function addBookToLibrary(book) {
 function displayBooks(library, container) {
     container.innerHTML = '';
     library.forEach((book, index) => {
-        container.insertAdjacentHTML('afterbegin', `<li>${book.title}, ${book.read ? 'already read' : 'not read yet'} <button type="button" class="btn-close" aria-label="Close" data-index="${index}"></button><svg data-index="${index}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        container.insertAdjacentHTML('afterbegin', `<li class="list-group-item">${book.title}, ${book.read ? 'already read' : 'not read yet'} <button type="button" class="btn-close" aria-label="Close" data-index="${index}"></button><svg data-index="${index}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
 </svg>
 </li>`);
